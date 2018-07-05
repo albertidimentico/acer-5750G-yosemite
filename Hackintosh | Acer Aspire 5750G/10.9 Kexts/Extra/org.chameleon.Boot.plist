@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Credits</key>
+	<string>www.Niresh.co</string>
+	<key>EthernetBuiltIn</key>
+	<string>Yes</string>
+	<key>device-properties</key> 
+	<string>4b00000001000000010000003f0000000100000002010c00d041030a0000000001010600001c0101060000007fff0400160000006200750069006c0074002d0069006e0000000500000001</string>
+	<key>Graphics Mode</key>
+	<string>"1920x1080x32"</string>
+	<key>Kernel Flags</key>
+    <string>npci=0x2000 dart=0 kext-dev-mode=1</string>
+	<key>PCIRootUID</key>
+	<string>1</string>
+	<key>Timeout</key>
+	<string>2</string>
+	<key>UseKernelCache</key>
+	<string>y</string>
+</dict>
+</plist>

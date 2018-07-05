@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Graphics Mode</key>
+	<string>1366x768x32</string>
+	<key>Kernel</key>
+	<string>/System/Library/Kernels/kernel</string>
+	<key>Kernel Flags</key>
+	<string>kext-dev-mode=1 npci=0x2000</string>
+	<key>SMBIOS</key>
+	<string>/Extra/SMBios.plist</string>
+	<key>SystemType</key>
+	<string>2</string>
+	<key>Timeout</key>
+	<string>5</string>
+</dict>
+</plist>

@@ -1,0 +1,143 @@
+==============================================================================
+SYSTEM INFO:
+ProductName:	Mac OS X
+ProductVersion:	10.10.3
+BuildVersion:	14D136
+==============================================================================
+Pre-Install Script
+------------------------------------------------------------------------------
+Creating /Volumes/Yosemite/EXTRAROOTDIR symlink targeting /Volumes/BOOTRAMDISK
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Yosemite                499.2 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk1
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *8.1 GB     disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                  Apple_HFS Pandora Installer Acer  7.7 GB     disk1s2
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:                            BOOTRAMDISK            *209.7 MB   disk2
+------------------------------------------------------------------------------
+END - Pre-Install Script
+==============================================================================
+Main ESP Post-Install Script
+Chameleon installer log - Sun Jun 14 21:03:42 CEST 2015
+Darwin/x86 boot v5.0.132 - Chameleon v2.3svn r2700
+
+==============================================================================
+SEARCHING ESP PARTITION:
+GPT partition Scheme detected..
+EFI partition found is /dev/disk0s1, try to mount it..
+ESP Mount Point is:/Volumes/EFI, using that as target Volume!
+==============================================================================
+BACKUP CHAMELEON FILES:
+Backup stage2 file /Volumes/EFI/boot to //Chameleon.Backups/2015-06-14-21h03/boot
+Backing up /Volumes/EFI/Extra folder to //Chameleon.Backups/2015-06-14-21h03/Extra
+==============================================================================
+EXTRA FOLDER:
+Extra folder already exist on /Volumes/EFI, copying to the Ram Disk..
+Delete: Entry, ":XHCILegacyOff", Does Not Exist
+Delete: Entry, ":ForceFullMemInfo", Does Not Exist
+Delete: Entry, ":Boot Banner", Does Not Exist
+Delete: Entry, ":Legacy Logo", Does Not Exist
+Delete: Entry, ":UHCIreset", Does Not Exist
+Delete: Entry, ":VBIOS", Does Not Exist
+Delete: Entry, ":EnableHDMIAudio", Does Not Exist
+Delete: Entry, ":EnableWifi", Does Not Exist
+Print: Entry, ":Kernel Flags", Does Not Exist
+Delete: Entry, ":Instant Menu", Does Not Exist
+Delete: Entry, ":UseMemDetect", Does Not Exist
+Delete: Entry, ":SkipNvidiaGfx", Does Not Exist
+Delete: Entry, ":EnableC3State", Does Not Exist
+Delete: Entry, ":EnableC7State", Does Not Exist
+Delete: Entry, ":EnableC6State", Does Not Exist
+Delete: Entry, ":QuietBoot", Does Not Exist
+Delete: Entry, ":UseNvidiaROM", Does Not Exist
+Delete: Entry, ":ShowInfo", Does Not Exist
+Print: Entry, ":arch", Does Not Exist
+Delete: Entry, ":NvidiaGeneric", Does Not Exist
+Delete: Entry, ":GUI", Does Not Exist
+Delete: Entry, ":UseIntelHDMI", Does Not Exist
+Delete: Entry, ":SkipAtiGfx", Does Not Exist
+Print: Entry, ":HDAULayoutID", Does Not Exist
+Delete: Entry, ":UseAtiROM", Does Not Exist
+Delete: Entry, ":EnableC2State", Does Not Exist
+Print: Entry, ":IntelAzulFB", Does Not Exist
+Delete: Entry, ":ForceWake", Does Not Exist
+Print: Entry, ":KeyLayout", Does Not Exist
+Print: Entry, ":HDEFLayoutID", Does Not Exist
+Delete: Entry, ":DropSSDT", Does Not Exist
+Delete: Entry, ":PrivateData", Does Not Exist
+Delete: Entry, ":RestartFix", Does Not Exist
+Delete: Entry, ":EnableDualLink", Does Not Exist
+Delete: Entry, ":EHCIacquire", Does Not Exist
+Delete: Entry, ":SkipIntelGfx", Does Not Exist
+Delete: Entry, ":CSTUsingSystemIO", Does Not Exist
+Delete: Entry, ":Wait", Does Not Exist
+Delete: Entry, ":EnableBacklight", Does Not Exist
+Delete: Entry, ":EnableC4State", Does Not Exist
+Delete: Entry, ":Wake", Does Not Exist
+Print: Entry, ":IntelCapriFB", Does Not Exist
+Delete: Entry, ":ForceHPET", Does Not Exist
+==============================================================================
+First Check Passed (not Fat16)!
+Windows installation not found on /dev/disk0.
+/dev/disk0s1 is FAT32 formatted
+==============================================================================
+WRITING STAGE 0:
+boot0 written to /dev/disk0
+==============================================================================
+WRITING STAGE 1 msdos:
+boot1f32 (msdos) written to /dev/rdisk0s1.
+==============================================================================
+WRITING STAGE 2:
+Stage 2 (boot) written to /Volumes/EFI.
+==============================================================================
+SET PARTITION ACTIVE:
+disk0, slice 1 is already set active. No need to change it.
+
+==============================================================================
+==============================================================================
+END - ESP Post-Install Script
+==============================================================================
+Installing KernelPatcher.dylib
+------------------------------------------------------------------------------
+KernelPatcher installed to Ram disk
+------------------------------------------------------------------------------
+==============================================================================
+Installing klibc.dylib
+------------------------------------------------------------------------------
+klibc installed to Ram disk
+------------------------------------------------------------------------------
+==============================================================================
+Installing Resolution.dylib
+------------------------------------------------------------------------------
+AutoReso installed to Ram disk
+------------------------------------------------------------------------------
+==============================================================================
+Installing FileNVRAM.dylib
+------------------------------------------------------------------------------
+FileNVRAM installed to Ram disk
+------------------------------------------------------------------------------
+==============================================================================
+Installing uClibcxx.dylib
+------------------------------------------------------------------------------
+uClibc installed to Ram disk
+------------------------------------------------------------------------------
+==============================================================================
+Running Post postinstall script
+Target volume = /Volumes/EFI
+------------------------------------------------------------------------------
+Moving Extra folder to /Volumes/EFI
+------------------------------------------------------------------------------
+Post postinstall script complete
+==============================================================================
+NOTE: any Themes or modules you have must be there since this now
+      is the boot partition. ACPI tables, SMBios.plist and the
+      org.chameleon.Boot.plist (with custom settings for the target
+      OSX must be in each partition that contain it.)
+==============================================================================

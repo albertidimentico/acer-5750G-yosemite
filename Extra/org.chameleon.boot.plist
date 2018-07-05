@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EthernetBuiltIn</key>
+	<string>Yes</string>
+	<key>Graphics Mode</key>
+	<string>1366x768x32</string>
+	<key>GraphicsEnabler</key>
+	<string>Yes</string>
+	<key>Legacy Logo</key>
+	<string>Yes</string>
+	<key>Quiet Boot</key>
+	<string>Yes</string>
+	<key>Theme</key>
+	<string>Original with yosemite style</string>
+	<key>UseKernelCache</key>
+	<string>Yes</string>
+</dict>
+</plist>
